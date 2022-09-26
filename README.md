@@ -22,3 +22,23 @@ dataUrl = {
   "Bergmann" : "https://media.talkbank.org/ca/Bergmann/0wav/"
 }
 ```
+### Note
+* It containe noise like : https://sla.talkbank.org/TBB/ca/CallHome/spa/1341.cha
+```
+ca/CallHome/spa/1341.cha
+ca/CallHome/spa/0981.cha
+ca/CallHome/spa/0836.cha
+ca/CallHome/spa/0992.cha
+ca/CallHome/spa/1062.cha
+ca/CallHome/spa/1379.cha
+ca/CallHome/spa/0997.cha
+ca/CallHome/spa/1140.cha
+ca/CallHome/spa/1058.cha
+ca/CallHome/spa/1333.cha
+ca/CallHome/spa/1552.cha
+ca/CallHome/spa/1849.cha
+ca/CallHome/spa/2054.cha
+ca/CallHome/spa/2057.cha
+ca/CallHome/spa/2109.cha
+ca/CallHome/spa/2144.cha
+```
