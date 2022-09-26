@@ -7,6 +7,7 @@ Call Home, Call Friend, Bergmann datasets annotations as Rich Transcription Time
 
 
 ### Audio Directory
+audio url format is `dataUrl[name]+id+".wav"` except ***Bergmann*** and ***CallFriendSpanish***
 ```json
 dataUrl = {
   "CallFriendFrench": "https://media.talkbank.org/ca/CallFriend/fra-q/0wav/",
