@@ -63,3 +63,18 @@ def dowload_audio_from_apache_server(url, audioIDs, dest):
                 
 dowload_audio_from_apache_server("https://media.talkbank.org/ca/CallHome/zho/0wav/", ["0695", "0718"], "audio")
 ```
+exception : Bergmann and CallFriendSpanish
+```python3
+def getCallFriendSpanish(url, id):
+  r = requests.get(url)
+  data = bs4.BeautifulSoup(r.text, "html.parser")
+  for l in data.find_all("a")[5:]:
+    if id in l["href"]:
+      return url + l["href"]
+def getBergman(url, id):
+  r = requests.get(url)
+  data = bs4.BeautifulSoup(r.text, "html.parser")
+  for l in data.find_all("a")[5:]:
+    if l["href"].split("_")[0] == id:
+      return url + l["href"]
+```
