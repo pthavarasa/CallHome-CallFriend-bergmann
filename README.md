@@ -71,6 +71,7 @@ def getCallFriendSpanish(url, id):
   for l in data.find_all("a")[5:]:
     if id in l["href"]:
       return url + l["href"]
+      
 def getBergman(url, id):
   r = requests.get(url)
   data = bs4.BeautifulSoup(r.text, "html.parser")
