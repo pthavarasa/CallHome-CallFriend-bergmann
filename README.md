@@ -44,3 +44,22 @@ ca/CallHome/spa/2057.cha
 ca/CallHome/spa/2109.cha
 ca/CallHome/spa/2144.cha
 ```
+### Download audio
+```python3
+import bs4
+import requests
+from pathlib import Path
+
+def dowload_audio_from_apache_server(url, audioIDs, dest):
+    Path(dest).mkdir(parents=True, exist_ok=True)
+    r = requests.get(url)
+    data = bs4.BeautifulSoup(r.text, "html.parser")
+    for l in data.find_all("a")[5:]:
+        print(url + l["href"])
+        if l["href"].split(".")[0] in audioIDs:
+            r = requests.get(url + l["href"])
+            with open(dest + "/" + l["href"], 'wb') as f:
+                f.write(r.content)
+                
+dowload_audio_from_apache_server("https://media.talkbank.org/ca/CallHome/zho/0wav/", ["0695", "0718"], "audio")
+```
