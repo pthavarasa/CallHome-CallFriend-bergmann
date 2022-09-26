@@ -1,10 +1,11 @@
 # CallHome-CallFriend-bergmann
 Call Home, Call Friend, Bergmann datasets annotations as Rich Transcription Time Marked (RTTM) for speaker diarization purpose.
 
+### Details
 - length = 924
 - training set = 646
 - testing set = 278
-
+- Regex = `\*(\S+):[^\*]*?(\d*)_(\d*)(?:[^\*]*?(\d*)_(\d*))*`
 
 ### Audio Directory
 audio url format is `dataUrl[name]+id+".wav"` except ***Bergmann*** and ***CallFriendSpanish***
