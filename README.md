@@ -1,6 +1,11 @@
 # CallHome-CallFriend-bergmann
 Call Home, Call Friend, Bergmann datasets annotations as Rich Transcription Time Marked (RTTM) for speaker diarization purpose.
 
+- length = 924
+- training set = 646
+- testing set = 278
+
+
 ### Audio Directory
 ```json
 dataUrl = {
