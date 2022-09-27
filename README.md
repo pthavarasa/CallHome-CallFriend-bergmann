@@ -44,6 +44,7 @@ ca/CallHome/spa/2057.cha
 ca/CallHome/spa/2109.cha
 ca/CallHome/spa/2144.cha
 ```
+* some audios are not annotated start to end 
 ### Download audio
 ```python3
 import bs4
